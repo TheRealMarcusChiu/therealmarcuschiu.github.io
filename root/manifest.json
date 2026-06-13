@@ -4,6 +4,9 @@
     "home": {
       "type": "dir",
       "children": {
+        "HELLO.txt": {
+          "type": "file"
+        },
         "marcus": {
           "type": "dir",
           "children": {
