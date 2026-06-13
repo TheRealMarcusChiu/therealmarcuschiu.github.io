@@ -1,4 +1,4 @@
-Hola, my name is Marcus. I'm best reached via [linktree](linktree.sh) or [email](email.sh).
+Hi, my name is Marcus. I'm best reached via [linktree](linktree.sh) or [email](email.sh).
 
 I try to be present. I work on software systems, and they work with me. Along the way I keep a [var-log](var-log.sh) of notes for myself.
 

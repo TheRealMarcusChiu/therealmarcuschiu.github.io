@@ -4,9 +4,6 @@
     "home": {
       "type": "dir",
       "children": {
-        "HELLO.txt": {
-          "type": "file"
-        },
         "marcus": {
           "type": "dir",
           "children": {
@@ -49,6 +46,10 @@
             },
             "README.txt": {
               "type": "readme"
+            },
+            "stuff-2.sh": {
+              "type": "exec",
+              "url": "https://www.google.com/"
             },
             "stuff.sh": {
               "type": "exec",
