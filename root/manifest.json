@@ -33,6 +33,9 @@
                 },
                 "today.txt": {
                   "type": "file"
+                },
+                "TODO.txt": {
+                  "type": "file"
                 }
               }
             },
@@ -46,10 +49,6 @@
             },
             "README.txt": {
               "type": "readme"
-            },
-            "stuff-2.sh": {
-              "type": "exec",
-              "url": "https://www.google.com/"
             },
             "stuff.sh": {
               "type": "exec",
