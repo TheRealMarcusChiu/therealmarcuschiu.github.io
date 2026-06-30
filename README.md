@@ -24,12 +24,14 @@ browser between visits.
 
 | path | what |
 | --- | --- |
-| `public/index.html` | the entire site — terminal, vim, filesystem, the lot |
-| `public/root/` | the virtual filesystem you walk around in |
-| `public/root/fs.js` | the filesystem embedded as JS so `cat` works from `file://` too |
-| `public/support.js` | the tiny component runtime |
+| `index.html` | the entire site — terminal, vim, filesystem, the lot |
+| `root/` | the virtual filesystem you walk around in |
+| `root/fs.js` | the filesystem embedded as JS so `cat` works from `file://` too |
+| `support.js` | the tiny component runtime |
+| `build.js` | walks `./root` and regenerates `manifest.json` + `root/fs.js` |
 
-No build step to run it — open `public/index.html` and it boots.
+No build step to run it — open `index.html` and it boots. After editing anything
+under `./root`, run `node build.js` to regenerate the filesystem bundle.
 
 ## the terminal
 
@@ -44,9 +46,8 @@ built-ins are safe.
 
 There are a handful. `help` won't list them — that's the point[.](https://marcuschiu.com)
 
-A few breadcrumbs: the site has a pulse if you're idle, a sealed `/root` you can't
-read yet, and a `console` that talks back if you open DevTools. Real terminals
-reward curiosity; so does this one.
+A few breadcrumbs: a sealed `/root` you can't read yet, and a `console` that talks
+back if you open DevTools. Real terminals reward curiosity; so does this one.
 
 <details>
 <summary>I gave up — show me (spoilers, obviously)</summary>
@@ -105,7 +106,6 @@ many of the ~27 secrets you've found (`12/27`, the rest shown as `???`, persiste
 **Triggers & ambient effects**
 
 - Konami code (↑↑↓↓←→←→ B A — or a gamepad) → toggles green-phosphor mode
-- idle screensaver → matrix rain after 60s of stillness
 - `rm -rf /` (and `~`, `.`) → dramatic fake deletion + screen glitch, then "just kidding" — deletes nothing
 - phosphor ghosting when you `clear` · a time-aware greeting + visit-count milestones · low-battery "running on fumes"
 - mobile: shake to `degauss`, tilt to slide the warm glow
