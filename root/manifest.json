@@ -1,0 +1,41 @@
+{
+  "type": "dir",
+  "children": {
+    "home": {
+      "type": "dir",
+      "children": {
+        "marcus": {
+          "type": "dir",
+          "children": {
+            ".bashrc": {
+              "type": "file"
+            },
+            ".plan": {
+              "type": "file"
+            },
+            ".plans": {
+              "type": "dir",
+              "children": {
+                ".plan-2026-05-18": {
+                  "type": "file"
+                },
+                ".plan-2026-07-01": {
+                  "type": "file"
+                },
+                ".plan-2026-07-02": {
+                  "type": "file"
+                }
+              }
+            },
+            ".profile": {
+              "type": "file"
+            },
+            "README.txt": {
+              "type": "readme"
+            }
+          }
+        }
+      }
+    }
+  }
+}
